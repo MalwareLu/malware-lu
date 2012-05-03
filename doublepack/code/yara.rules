@@ -1,0 +1,8 @@
+rule DoublePack
+{
+	strings:
+		$c = "\\system32\\cabinet.dll" nocase
+
+	condition:
+		any of them
+}
