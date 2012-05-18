@@ -1,0 +1,10 @@
+rule xpxaxcxk_dhlreport
+{
+	strings:
+		$c = "ClientCount.exe" nocase
+		$d = "?WideTranslator@@" nocase
+
+	condition:
+		any of them
+}
+
